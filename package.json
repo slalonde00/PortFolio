@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^5.1.0",
+    "cors": "^2.8.5",
     "nodemon": "^2.0.12"
   }
 }

@@ -10,11 +10,17 @@ const App2 = () => {
   
     const handleClick = async () => {
       // fetch
-      const fetched = await axios.get(`https://api.github.com/users/${value}/repos`);
+     /* const fetched = await axios.get(`https://api.github.com/users/${value}/repos`);
       setRepos(fetched.data);
       console.log(fetched);
+*/
 
-    }
+const fetched = await axios.get(`https://backend.deviantart.com/oembed?url=http%3A%2F%2Ffav.me%2Fd2enxz7&format=jsonp&callback=?`);
+//setRepos(fetched.data);
+console.log(fetched.data.author_name)
+console.log(fetched);
+  };
+    
 
     
   const handleSubmit = (event) => {
