@@ -35,9 +35,9 @@ const App2 = () => {
       </form>
     </header>
     <main className="App-main">
-    <Jumbotron>  
+    
     {repos   && repos.map(r => <div key={r.id}><label>{r.name} : </label><bouton variant="primary" className="mt-3 mb-3"><a href={r.html_url}>{r.html_url}</a></bouton>   </div>)}
-    </Jumbotron>    
+    
     </main>
 </div>      
     )
